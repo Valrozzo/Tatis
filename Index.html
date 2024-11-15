@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+  <title>Tati'Spa</title>
+
+</style>
+
+
+	  <style>
+    #banner {
+      position: top;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      height: 200px;
+      background-color: #EEE5E5 ;
+
+    }
+     </style>
+
+
+<!--carrusel css-->
+   <style>
+        * {
+            box-sizing: border-box;
+        }
+       body {
+            font-family:Cinzel Decorative', cursive;
+            margin: 0;
+           <!-- padding: 0; -->
+        }
+        .carousel {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+          }
+
+        .slides {
+            display: flex;
+            width: 300%;
+           animation: slide 20s; infinite;
+        }
+        .slides img {
+            width: 100%;
+            height: 100%;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+        
+    </style> 
+
+    <!-- end carrusel css-->
+
+
+<!--pie de pagina-->
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  .content {
+      min-height: 90vh;
+      padding: 20px;
+  }
+  footer {
+      background-color: #E6C2EF;
+      color: black;
+      text-align: center;
+      padding: 20px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+  }
+  footer .social-media {
+      margin: 10px 0;
+  }
+  footer .social-media a {
+      margin: 0 10px;
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+  }
+  footer .social-media a:hover {
+      color: #fdfdfd;
+  }
+  footer p {
+      margin: 5px 0;
+  }
+</style>
+<!--end pie de pagina -->
+
+
+
+    <style>
+   #banner img.active {
+      opacity: 1;
+    }
+
+    nav {
+      background-color: #E6C2EF ;
+      padding: 10px;
+    }
+    
+    nav a {
+      display: inline-block;
+      padding: 20px 20px; /*tamaño de los botones*/
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 20px; /* Aumentar el tamaño de fuente a 40 píxeles */
+    }
+    
+    nav a:hover {
+      background-color: #020202;
+      /*color: #020202;
+
+    }
+
+h1 {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+h2 {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+p {
+  font-size: 40px;
+}
+
+</style>
+    		</style>
+	</head>
+
+	<body bgcolor="#E7DDFF" ; opacity="0.7",
+  elemento-transparente {
+
+  opacity= "0.5" /* Valores entre 0 y 1 */
+     
+  <div id=botonera>
+
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="productos.html">Productos</a>
+        <a href="calendario lunar.html">Calendario Lunar</a>
+       <a href="https://salondebellezadetatianaespinel.site.agendapro.com/co/sucursal/254301" target="_blank">Reserva</a>
+        <a href="https://wa.link/jpqd86" target="_blank">Contactanos</a>
+       <img src="IMGS/T1.PNG" align="center" alt="Imagen 1"  style="height: 150px; width: 150px">
+      </nav>
+
+    </div>
+
+<div>
+<img src="">
+  		<script>/*script que define el funcionamiento del banner*/
+    	var images = document.querySelectorAll('#banner img');
+    	var index = 0;
+
+    	function changeImage() {
+      	images[index].classList.remove('active');
+      	index = (index + 1) % images.length;
+      	images[index].classList.add('active');
+    	}
+
+    	setInterval(changeImage, 3000);
+  		</script>
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+      <h1 align="center" style="font-size: 70px;">Tati'Spa</h1>
+      <h1 align="center">La belleza que te hace sonreir</h1>
+      <div style="text-align: center;">
+      
+      </div>
+
+
+      <!-- Carousel Start -->
+   
+     <div class="carousel" style="height: 600px; width:600px;">
+        <div class="slides">
+            <img src="IMGS/M1.jpg"; alt="Slide 1">
+            <img src="IMGS/M2.jpg"; alt="Slide 2">
+            <img src="IMGS/M3.jpg"; alt="Slide 3">
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelector('.slides');
+        const totalSlides = slides.children.length;
+    
+        function plusSlides(n) {
+            slideIndex = (slideIndex + n + totalSlides) % totalSlides;
+            slides.style.transform = translateX(${-slideIndex * 100}%);
+        }
+
+    </script>
+    <!--ensd Carrusdel-->
+    <br>
+<br>
+<br>
+
+   <div align="center">
+    <img src="IMGS/Tati’spa1.jpg"; align="center" style="height: 900px; width: 1300px;" alt="Imagen 2">
+  </div>
+<br>
+<br>
+<br>
+<div align="center">
+    <img src="IMGS/Tati’spa2.jpg"; align="center" style="height: 900px; width: 1300px;" alt="Imagen 2">
+  </div>
+  <br>
+  <br>
+  <div align="center">
+   
+  <br>
+  <br>
+<div  style="font-size: 20px; text-align: center; font-family:Cinzel Decorative', cursive;"">
+    <br>
+    <br>
+    <br>
+    
+    <p>Te brindamos asesoramiento especializado para un cambio de look, para damas y caballeros donde encontrarás a los mejores profesionales para brindarte un servicio inigualable, en un ambiente moderno con toda las comodidades que necesitas a precios accesibles.<br>
+
+Un lugar mágico donde obtienes la atención, asesoría y calidad que garantizan nuestros expertos en corte y color, manicura y pedicura, maquillaje y tratamientos de belleza, quienes te brindan un excelente servicio utilizando los mejores productos del mercado.</p>
+</div>
+
+
+
+<footer>
+    <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    <div class="social-media">
+        <a href="https://wa.link/jpqd86">WhatsApp</a>
+        <a href="#">Twitter</a>
+        <a href="https://www.instagram.com/tatis.n_1/profilecard/?igsh=MWp0bjFoOTM1dWk0cw==">Instagram</a>
+    </div>
+    <p>Contacto: Tatis.espi02@gmail.com</p>
+</footer>
+
+	</body>
+
+
+</html>

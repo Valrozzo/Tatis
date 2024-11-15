@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <title>Tati'Spa</title>
+
+
+    <style>
+    #banner {
+      position: top;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      height: 200px;
+      background-color: #E6C2EF ;
+  
+    
+      overflow: hidden;
+    }
+
+    #products{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 1rem;
+    }
+    
+    #products div{
+      display: flex;
+      align-items: center;
+      padding: 5px;
+    }
+
+    #products img{
+      object-fit: cover;
+      height: 350px;
+      width: 350px;
+      margin: 5px;
+    }
+
+    #banner img {
+      position: absolute;
+      top: top;
+      left: left;
+      width: 20;
+      height: 20;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    #banner img.active {
+      opacity: 1;
+    }
+
+    nav {
+      background-color: #E6C2EF ;
+      padding: 10px;
+    }
+    
+    nav a {
+      display: inline-block;
+      padding: 20px 20px; /*tamaño de los botones*/
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 20px; /* Aumentar el tamaño de fuente a 40 píxeles */
+    }
+    
+    nav a:hover {
+      background-color: #000000;
+    
+
+    }
+</style>
+
+  <!--pie de pagina-->
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  .content {
+      min-height: 90vh;
+      padding: 20px;
+  }
+  footer {
+      background-color: #E6C2EF;
+      color: black;
+      text-align: center;
+      padding: 20px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+  }
+  footer .social-media {
+      margin: 10px 0;
+  }
+  footer .social-media a {
+      margin: 0 10px;
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+  }
+  footer .social-media a:hover {
+      color: #fdfdfd;
+  }
+  footer p {
+      margin: 5px 0;
+  }
+</style>
+<!--end pie de pagina -->
+
+
+
+        </style>
+  </head>
+
+  <body bgcolor="#E7DDFF">
+
+    <div id=botonera>
+
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="productos.html">Productos</a>
+        <a href="calendario lunar.html">Calendario Lunar</a>
+        <a href="https://salondebellezadetatianaespinel.site.agendapro.com/co/sucursal/254301" target="_blank">Reserva</a>
+        <a href="https://wa.link/jpqd86" target="_blank">Contactanos</a>
+        <img src="IMGS/T1.PNG" align="center" alt="Imagen 1"  style="height: 150px; width: 150px">
+        </nav>
+
+    </div>
+
+
+  		<script>/*script que define el funcionamiento del banner*/
+    	var images = document.querySelectorAll('#banner img');
+    	var index = 0;
+
+    	function changeImage() {
+      	images[index].classList.remove('active');
+      	index = (index + 1) % images.length;
+      	images[index].classList.add('active');
+    	}
+
+    	setInterval(changeImage, 2500);
+  		</script>
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+      <h1 align="center" style="font-size: 70px;">Tati'Spa</h1>
+      <div style="text-align: center; style:100px">
+
+      <div style="text-align: center;">
+      
+      </div>
+
+      <div id="products">
+        <div>
+          <p align="justify"  style="font-size: 25px;">Shampoo post cuidado, con acido hialuronico, su activo especializado de cobre permite controlar la caspa y la caída del cabello, previene la alopecia y estimula el crecimiento capilar. </p>
+          <img src="PRODUCTOS/PR3.png" alt="imagen 3">
+          
+        </div>
+        <div>
+          <img src="PRODUCTOS/PR4.png" alt="Imagen 4">
+          <p align="justify"  style="font-size: 25px;">El dulce secreto para fortalecer tu cabello desde adentro, con una deliciosa combinación de nutrientes esenciales, nuestras gomitas están diseñadas para mejorar la salud capilar y dejarte con un cabello fuerte y radiante.</p>
+          
+        </div>
+        <div>
+        <p align="justify"  style="font-size: 25px;"> Kit diseñado y formulado con activos que ayudan a mantener sana, limpia e hidratada la fibra capilar.🧖🏼‍♀✨ Su fórmula enriquecida con extractos y aceites naturales brindan protección, nutrición, brillo y suavidad al cabello, evitando la caída, permitiendo regenerar las células muertas, sellando la cutícula y eliminando el frizz. </p>
+        <img src="PRODUCTOS/PR5.png" alt="imagen 5">
+        </div>
+        <div>
+          <img src="PRODUCTOS/PR6.png" alt="Imagen 6">
+          <p align="justify"  style="font-size: 25px;"> "Olas de Poseidón" es un cóctel refrescante y vibrante que combina el sabor tropical del ron con la frescura del jugo de piña y un toque cítrico del zumo de lima. Se sirve en una copa alta con hielo, decorado con una rodaja de lima y una sombrilla tropical. Este trago te transportará a las profundidades del océano, despertando la sensación de frescura y brindándote una experiencia refrescante y llena de energía. </p>
+          
+        </div>
+        <div>
+        <p align="justify"  style="font-size: 25px;">La "Precisión de Apolo" es un cóctel elegante y equilibrado que combina la suavidad del vodka con la frescura del jugo de limón y un toque de amargor del aperitivo de naranja. Se sirve en una copa de martini previamente enfriada, decorada con una rodaja fina de limón. Este trago te brinda una experiencia refinada y sofisticada, reflejando la precisión y perfección asociadas con el dios Apolo en la mitología griega. </p>
+        <img src="PRODUCTOS/PR7.png" alt="imagen 7">
+        </div>        
+        <div>
+          <img src="PRODUCTOS/PR8.png" alt="Imagen 8">
+        <p align="justify"  style="font-size: 25px;">La "Sabiduría de Atenea" es un cóctel sofisticado y equilibrado que combina la elegancia del gin con la frescura del zumo de limón y un toque de dulzura del jarabe de lavanda. Se sirve en una copa de martini previamente enfriada, decorada con una ramita de lavanda. Este trago te invita a disfrutar de una experiencia refinada y estimulante, inspirada en la sabiduría y conocimiento asociados con la diosa griega Atenea.</p>
+        </div>
+      </div>
+
+        <div class="content">
+          <h1>Contenido Principal</h1>
+          <p>Aquí va el contenido de la página. Este es solo un ejemplo de cómo agregar un pie de página.</p>
+      </div>
+      
+      <footer>
+          <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+          <div class="social-media">
+              <a href="https://wa.link/jpqd86">WhatsApp</a>
+              <a href="#">Twitter</a>
+              <a href="https://www.instagram.com/tatis.n_1/profilecard/?igsh=MWp0bjFoOTM1dWk0cw==">Instagram</a>
+          </div>
+          <p>Contacto: Tatis.espi02@gmail.com</p>
+      </footer>
+
+
+	</body>
+
+
+</html>
